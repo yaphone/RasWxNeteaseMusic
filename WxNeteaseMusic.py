@@ -183,7 +183,10 @@ class WxNeteaseMusic:
                         #self.mp3 = mp3play.load(mp3_url)
                         #self.mp3.play()
                         subprocess.Popen("pkill omxplayer", shell=True)
-                        info = subprocess.Popen("omxplayer " + mp3_url, shell=True,stdout=subprocess.PIPE)
+                        p = subprocess.Popen("omxplayer " + mp3_url, shell=True,stdout=subprocess.PIPE)
+                        while p.poll() is None:
+                            l = p.stdout.readline()
+                            print l
                         #print info.stdout.readline()
                         self.con.notifyAll()
                         self.con.wait(int(song.get('playTime')) / 1000)
