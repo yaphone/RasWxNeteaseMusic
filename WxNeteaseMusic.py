@@ -5,8 +5,6 @@ import time
 import subprocess
 from myapi import MyNetease
 import os
-import mp3play
-
 class WxNeteaseMusic:
     def __init__(self):
         self.help_msg = \
@@ -182,17 +180,23 @@ class WxNeteaseMusic:
                     mp3_url = song["mp3_url"]
                     print mp3_url
                     try: #有些音乐已失效，自动跳过
-                        self.mp3 = mp3play.load(mp3_url)
-                        self.mp3.play()
+                        #self.mp3 = mp3play.load(mp3_url)
+                        #self.mp3.play()
+                        subprocess.Popen("pkill omxplayer", shell=True)
+                        info = subprocess.Popen("omxplayer " + mp3_url, shell=True,stdout=subprocess.PIPE)
+                        #print info.stdout.readline()
+                        self.con.notifyAll()
+                        self.con.wait(int(song.get('playTime')) / 1000)
                     except:
                         pass
                 else:
                     try:
-                        self.mp3.stop()
+                        subprocess.Popen("pkill omxplayer", shell=True)
+                        self.con.notifyAll()
+                        self.con.wait()
                     except:
                         pass
-            self.con.notifyAll()
-            self.con.wait(int(song.get('playTime')) / 1000)
+
 
 
 
