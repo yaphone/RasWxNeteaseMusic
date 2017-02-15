@@ -180,18 +180,13 @@ class WxNeteaseMusic:
                     mp3_url = song["mp3_url"]
                     print mp3_url
                     try: #有些音乐已失效，自动跳过
-                        #self.mp3 = mp3play.load(mp3_url)
-                        #self.mp3.play()
                         subprocess.Popen("pkill omxplayer", shell=True)
-                        p = subprocess.Popen("omxplayer " + mp3_url, shell=True,stdout=subprocess.PIPE)
-                        while p.poll() is None:
-                            l = p.stdout.readline()
-                            print l
-                        #print info.stdout.readline()
+                        time.sleep(1)
+                        subprocess.Popen("omxplayer " + mp3_url, shell=True, stdout=subprocess.PIPE)
                         self.con.notifyAll()
                         self.con.wait(int(song.get('playTime')) / 1000)
                     except:
-                        pass
+                        subprocess.Popen("omxplayer " + mp3_url, shell=True, stdout=subprocess.PIPE)
                 else:
                     try:
                         subprocess.Popen("pkill omxplayer", shell=True)
@@ -199,7 +194,3 @@ class WxNeteaseMusic:
                         self.con.wait()
                     except:
                         pass
-
-
-
-

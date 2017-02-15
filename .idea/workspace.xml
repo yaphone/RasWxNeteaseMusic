@@ -15,21 +15,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WxNeteaseMusic.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WxNeteaseMusic.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WxNeteaseMusic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="186" column="15" lean-forward="false" selection-start-line="186" selection-start-column="15" selection-end-line="186" selection-end-column="15" />
+            <state relative-caret-position="563">
+              <caret line="188" column="100" lean-forward="false" selection-start-line="188" selection-start-column="100" selection-end-line="188" selection-end-column="100" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="17" column="84" lean-forward="false" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
+            <state relative-caret-position="383">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#14#24#0" expanded="true" />
               </folding>
@@ -56,14 +56,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/WxNeteaseMusic.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/WxNeteaseMusic.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="69" />
-    <option name="y" value="12" />
+    <option name="x" value="1" />
+    <option name="y" value="72" />
     <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
@@ -117,7 +117,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="12" width="1924" height="1056" extended-state="0" />
+    <frame x="1" y="72" width="1924" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2497349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -155,21 +155,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WxNeteaseMusic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="186" column="15" lean-forward="false" selection-start-line="186" selection-start-column="15" selection-end-line="186" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="17" column="84" lean-forward="false" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
+        <state relative-caret-position="383">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#14#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WxNeteaseMusic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="188" column="100" lean-forward="false" selection-start-line="188" selection-start-column="100" selection-end-line="188" selection-end-column="100" />
+          <folding />
         </state>
       </provider>
     </entry>

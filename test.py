@@ -3,6 +3,8 @@ import sys
 from subprocess import PIPE, Popen
 from threading  import Thread
 
+mp3_url = "http://m2.music.126.net/DeRuZvVpYsqCHMngfISnwQ==/18724683022792919.mp3"
+
 try:
     from Queue import Queue, Empty
 except ImportError:
@@ -15,7 +17,7 @@ def enqueue_output(out, queue):
         queue.put(line)
     out.close()
 
-p = Popen("omxplayer http://m2.music.126.net/DeRuZvVpYsqCHMngfISnwQ==/18724683022792", shell=True, stdout=PIPE, bufsize=1, close_fds=ON_POSIX)
+p = Popen("omxplayer " + mp3_url, shell=True, stdout=PIPE, bufsize=1, close_fds=ON_POSIX)
 q = Queue()
 t = Thread(target=enqueue_output, args=(p.stdout, q))
 t.daemon = True # thread dies with the program
@@ -30,4 +32,5 @@ try:
 except Empty:
     print('no output yet')
 else: # got line
-    print line
+    if "nice" in line:
+        print "*******OK*******"
