@@ -10,4 +10,4 @@ def mp3_player(msg):
     return res
 
 itchat.auto_login(enableCmdQR=True)
-itchat.run(debug=True)
+itchat.run(debug=False)

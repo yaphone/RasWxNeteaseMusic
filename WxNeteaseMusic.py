@@ -149,7 +149,9 @@ class WxNeteaseMusic:
             arg3 = arg_list[2]
             try:
                 if arg1 == u'L':  #用户登陆
-                    res = self.myNetease.login(arg2, arg3)
+                    username = arg2
+                    password = arg3
+                    res = self.myNetease.login(username, password)
                 elif arg1 == u"S":
                     song_name = arg2
                     song_list = self.myNetease.search_by_name(song_name)
@@ -178,15 +180,14 @@ class WxNeteaseMusic:
                     self.playlist.remove(song)
                     self.playlist.append(song)
                     mp3_url = song["mp3_url"]
-                    print mp3_url
-                    try: #有些音乐已失效，自动跳过
+                    try:
                         subprocess.Popen("pkill omxplayer", shell=True)
                         time.sleep(1)
                         subprocess.Popen("omxplayer " + mp3_url, shell=True, stdout=subprocess.PIPE)
                         self.con.notifyAll()
                         self.con.wait(int(song.get('playTime')) / 1000)
                     except:
-                        subprocess.Popen("omxplayer " + mp3_url, shell=True, stdout=subprocess.PIPE)
+                        pass
                 else:
                     try:
                         subprocess.Popen("pkill omxplayer", shell=True)

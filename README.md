@@ -12,9 +12,15 @@
 
 项目源码都都在[我的Github](https://github.com/yaphone/WxNeteaseMusic)上，大家先下载下来，麻烦顺手点个star哟~，谢谢。
 
-我们以ubuntu 16.04环境为例，安装其实很简单，都是一些python的pip依赖包
+我们以树莓派环境为例，安装其实很简单，都是一些python的pip依赖包
 
-* sudo pip install requests future crypto bs4 mp3play python-crypto
+- sudo apt-get update
+- sudo apt-get install python-dev
+- sudo pip install pycrypto
+
+* sudo pip install requests 
+* sudo pip install future
+* sudo pip install  bs4
 * 切换到WxNeteaseMusic目录，执行python run.py 
 
 用微信扫码登陆，Bingo, just enjoy it !

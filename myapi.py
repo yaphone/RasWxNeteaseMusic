@@ -40,7 +40,10 @@ class MyNetease:
         return playlist
 
     def login(self, username, password): #用户登陆
-        password = hashlib.md5(password.encode('utf-8')).hexdigest()
+        print password
+        print "********"
+        password = hashlib.md5(password).hexdigest()
+        print password
         login_info = self.netease.login(username, password)
         #login_info = {u'profile': {u'followed': False, u'remarkName': None, u'expertTags': None, u'userId': 57542828, u'authority': 0, u'userType': 0, u'backgroundImgId': 2002210674180199, u'city': 500105, u'mutual': False, u'avatarUrl': u'http://p4.music.126.net/VnZiScyynLG7atLIZ2YPkw==/18686200114669622.jpg', u'avatarImgIdStr': u'18686200114669622', u'detailDescription': u'', u'province': 500000, u'description': u'', u'avatarImgId_str': u'18686200114669622', u'signature': u'', u'birthday': -2209017600000, u'nickname': u'\u8309\u82b7\u6c34', u'vipType': 0, u'avatarImgId': 18686200114669622, u'gender': 0, u'djStatus': 0, u'accountStatus': 0, u'backgroundImgIdStr': u'2002210674180199', u'backgroundUrl': u'http://p1.music.126.net/VTW4vsN08vwL3uSQqPyHqg==/2002210674180199.jpg', u'defaultAvatar': True, u'authStatus': 0}, u'account': {u'userName': u'0_zhouyaphone@163.com', u'status': 0, u'anonimousUser': False, u'whitelistAuthority': 0, u'baoyueVersion': 0, u'salt': u'', u'createTime': 0, u'tokenVersion': 0, u'vipType': 0, u'ban': 0, u'type': 0, u'id': 57542828, u'donateVersion': 0}, u'code': 200, u'effectTime': 2147483647, u'clientId': u'9505bf08c1e71d06255c860eb9b7dc399042ae3a54428d81b05af2aad65f9b9a2128fa7de6b09db4b64bf3324e151b2186a1ad5be63cc816', u'loginType': 0, u'bindings': [{u'expiresIn': 2147483647, u'tokenJsonStr': u'{"email":"zhouyaphone@163.com"}', u'url': u'', u'type': 0, u'userId': 57542828, u'refreshTime': 0, u'expired': False, u'id': 27817958}]}
         if login_info['code'] == 200:
@@ -54,6 +57,9 @@ class MyNetease:
         else:
             res = u"登陆失败"
         return res
+
+    def hello(self, username, password):
+        return "OK"
 
     def get_user_playlist(self):  #获取用户歌单
         playlist = self.netease.user_playlist(self.userId)  # 用户歌单
