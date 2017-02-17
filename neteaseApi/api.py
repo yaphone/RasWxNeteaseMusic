@@ -102,6 +102,7 @@ def encrypted_id(id):
 # 登录加密算法, 基于https://github.com/stkevintan/nw_musicbox脚本实现
 def encrypted_request(text):
     text = json.dumps(text)
+    log.debug(text)
     secKey = createSecretKey(16)
     encText = aesEncrypt(aesEncrypt(text, nonce), secKey)
     encSecKey = rsaEncrypt(secKey, pubKey, modulus)
@@ -249,7 +250,7 @@ class NetEase(object):
                                            data=query,
                                            headers=self.header,
                                            timeout=default_timeout)
-            self.session.cookies.save()
+            #self.session.cookies.save()
 
         connection.encoding = 'UTF-8'
         return connection.text

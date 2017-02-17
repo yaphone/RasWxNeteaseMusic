@@ -1,13 +1,4 @@
-#coding=utf-8
-from WxNeteaseMusic import WxNeteaseMusic
-import itchat
+from myapi import MyNetease
 
-wnm = WxNeteaseMusic()
-@itchat.msg_register(itchat.content.TEXT)
-def mp3_player(msg):
-    text = msg['Text']
-    res = wnm.msg_handler(text)
-    return res
-
-itchat.auto_login()
-itchat.run(debug=True)
+netease = MyNetease()
+print netease.login("zhouyaphone@163.com", "a123456")
