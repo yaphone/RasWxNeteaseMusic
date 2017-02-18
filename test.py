@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 from myapi import MyNetease
 
 netease = MyNetease()
 print netease.login("zhouyaphone@163.com", "a123456")
-=======
 #coding=utf-8
 import sys
 from subprocess import PIPE, Popen
@@ -40,4 +38,3 @@ except Empty:
 else: # got line
     if "nice" in line:
         print "*******OK*******"
->>>>>>> 548f05d769e3a741aedc48eddc9320404a3846e6
