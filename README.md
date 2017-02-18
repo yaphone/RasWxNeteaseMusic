@@ -17,10 +17,10 @@
 - sudo apt-get install python-dev
 
 * sudo pip install requests
-*  sudo pip install future
-*  sudo pip install crypto 
-*  sudo pip install bs4 
-*  sudo pip install pycrypto
+* sudo pip install future
+* sudo pip install crypto 
+* sudo pip install bs4 
+* sudo pip install pycrypto
 * 切换到WxNeteaseMusic目录，执行python run.py 
 
 用微信扫码登陆，Bingo, just enjoy it !
@@ -55,7 +55,7 @@
 * T: 热门单曲
 
 
-* G: 推荐单曲
+* ~~ G: 推荐单曲~~ ，树莓派由于在使用session模块时有问题，暂不提供该功能。
 * E: 退出
 
 这就是WxNeteaseMusic V0.1版的功能菜单啦，后面如果大家有其它的需求或者使用过程中有什么问题，都可以提出来，github上提Issue或者在下面评论都可以，后面我会尽量完善。
@@ -144,11 +144,19 @@
 
 
 
+## 其它
+
+---
+
+当前在树莓派上使用的播放器为raspbian自带的omxplayer，因为python的mp3play包不能在树莓派上使用，后来对比了mpg123和omxplayer发现，omxplayer音质还要相对好一些。
+
+
+
 ## BUGS
 
 ---
 
-1.网易云音乐中部分音乐链接已失效，所以可能导致播放失败的情况，这种情况下，WxNeteaseMusic直接路过该歌曲播放下一首。
+1.网易云音乐中部分音乐链接已失效，所以可能导致播放失败的情况，这种情况下，因为树莓派版使用的是omxplayer，而非其它平台下的WxNeteaseMusic使用的mp3play模块，omxplayer并不能感知到播放失败，还会一直等待当前播放失败的歌曲的时长才会播放下一首，或者其它命令触发切换动作，如（N）等，建议使用网易音乐的客户端把播放失败的这首歌直接删除掉，这样在树莓派上播放时就不会卡住了。
 
 2.通过`N 序号`选择列表中的歌曲时，播放是临时的，并不保存在播放列表中，此时再发`R`命令时显示的播放信息是错误的。
 
