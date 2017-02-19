@@ -85,7 +85,7 @@
 
 如果还不清楚的话，我还拍了个小视频，放在了优酷上，[请点击这里](http://v.youku.com/v_show/id_XMjUxODk5MDQxNg==.html)。
 
-[![视频演示](http://oj5vdtyuu.bkt.clouddn.com/screenshot.png)](http://oj5vdtyuu.bkt.clouddn.com/screenshot.png)
+[![视频演示](http://oj5vdtyuu.bkt.clouddn.com/screenshot.png)](http://v.youku.com/v_show/id_XMjUxODk5MDQxNg==.html?tpa=dW5pb25faWQ9MTAzMjUyXzEwMDAwMV8wMV8wMQ+)
 
 ## 其它
 
