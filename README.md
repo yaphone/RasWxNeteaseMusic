@@ -87,6 +87,8 @@
 
 <iframe height=498 width=510 src='http://player.youku.com/embed/XMjUxODk5MDQxNg==' frameborder=0 'allowfullscreen'></iframe>
 
+<embed src='http://player.youku.com/player.php/sid/XMjUxODk5MDQxNg==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+
 ## 其它
 
 当前在树莓派上使用的播放器为raspbian自带的omxplayer，因为python的mp3play包不能在树莓派上使用，后来对比了mpg123和omxplayer发现，omxplayer音质还要相对好一些。另外，在登陆网易云音乐的时候需要进行一个加密算法，由于树莓派的计算能力有限，所以需要多等待一会。
