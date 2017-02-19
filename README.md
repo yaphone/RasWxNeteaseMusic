@@ -85,9 +85,7 @@
 
 如果还不清楚的话，我还拍了个小视频，放在了优酷上，[请点击这里](http://v.youku.com/v_show/id_XMjUxODk5MDQxNg==.html)。
 
-<iframe height=498 width=510 src='http://player.youku.com/embed/XMjUxODk5MDQxNg==' frameborder=0 'allowfullscreen'></iframe>
-
-<embed src='http://player.youku.com/player.php/sid/XMjUxODk5MDQxNg==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+[![视频演示](http://oj5vdtyuu.bkt.clouddn.com/screenshot.png)](http://oj5vdtyuu.bkt.clouddn.com/screenshot.png)
 
 ## 其它
 
