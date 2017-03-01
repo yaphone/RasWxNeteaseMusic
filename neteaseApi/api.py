@@ -260,7 +260,10 @@ class NetEase(object):
         pattern = re.compile(r'^0\d{2,3}\d{7,8}$|^1[34578]\d{9}$')
         if pattern.match(username):
             return self.phone_login(username, password)
-        action = 'https://music.163.com/weapi/login/'
+        action = 'https://music.163.com/weapi/login?csrf_token='
+        csrf = ''
+        action += csrf
+        print(action)
         text = {
             'username': username,
             'password': password,
