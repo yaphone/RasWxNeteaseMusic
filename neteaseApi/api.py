@@ -263,7 +263,6 @@ class NetEase(object):
         action = 'https://music.163.com/weapi/login?csrf_token='
         csrf = ''
         action += csrf
-        print(action)
         text = {
             'username': username,
             'password': password,
