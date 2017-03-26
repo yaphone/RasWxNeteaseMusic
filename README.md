@@ -4,7 +4,7 @@
 
 ## 来源
 
-之前毕业的时候实在闲的无聊，正好手头上有个树莓派，就写了个简单的网易云音乐播放器，代码很简单，写的也很乱，功能更简单--只能搜索歌曲，然后播放之，放在了github上，没想到竟然收到三十多颗星，实在惭愧，然后放年假，就想着把功能稍微完善一下，于是就有了[WxNeteaseMusic](https://github.com/yaphone/RasWxNeteaseMusic)，其实做的工作也不多，基于[itchat](https://github.com/littlecodersh/ItChat)和[网易云音乐的python API](https://github.com/yaphone/NetEase-MusicBox)，废话不多说，容我简单介绍一下吧。
+之前毕业的时候实在闲的无聊，正好手头上有个树莓派，就写了个简单的网易云音乐播放器，代码很简单，写的也很乱，功能更简单--只能搜索歌曲，然后播放之，放在了github上，没想到竟然收到三十多颗星，实在惭愧，然后放年假，就想着把功能稍微完善一下，于是就有了[WxNeteaseMusic](https://github.com/yaphone/RasWxNeteaseMusic)，其实做的工作也不多，基于[itchat](https://github.com/littlecodersh/ItChat)和[网易云音乐的python API](https://github.com/yaphone/musicbox)，废话不多说，容我简单介绍一下吧。
 
 首先，我的场景是这样的，实验室是有一台电脑放音乐的，大家切歌就要跑到那里操作，比较麻烦，后来我就想做个后台，用微信来操作切歌这些，这样大家只要加了我的微信号，发相关指令就可以了，还是比较方便的。再后来，电脑换成了树莓派，我就又移植到了树莓派上。不过这里吐槽一下，树莓派的原生音质确实渣，我们后来买了个 DAC ，完美。😁
 
