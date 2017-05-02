@@ -1,4 +1,4 @@
-#树莓派版网易云音乐播放器
+# 树莓派版网易云音乐播放器
 
 注意，该版本为树莓派版，如果需要使用电脑版(Windows/Linux/OSX)，[请点击这里](https://github.com/yaphone/WxNeteaseMusic)。
 
