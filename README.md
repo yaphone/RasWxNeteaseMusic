@@ -89,6 +89,10 @@
 
 [![视频演示](http://oj5vdtyuu.bkt.clouddn.com/screenshot.png)](http://v.youku.com/v_show/id_XMjUxODk5MDQxNg==.html?tpa=dW5pb25faWQ9MTAzMjUyXzEwMDAwMV8wMV8wMQ+)
 
+### Todo List
+
+- 增加控制音量功能 `amixer sset PCM 80%`
+
 ## 其它
 
 当前在树莓派上使用的播放器为raspbian自带的omxplayer，因为python的mp3play包不能在树莓派上使用，后来对比了mpg123和omxplayer发现，omxplayer音质还要相对好一些。另外，在登陆网易云音乐的时候需要进行一个加密算法，由于树莓派的计算能力有限，所以需要多等待一会。
